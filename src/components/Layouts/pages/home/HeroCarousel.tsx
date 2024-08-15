@@ -14,7 +14,7 @@ import Image from "next/image";
 
 export function HeroCarousel() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnFocusIn: false })
   );
 
   return (
@@ -25,25 +25,23 @@ export function HeroCarousel() {
         loop: true,
       }}
       className="w-full"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
-            <div className="w-full h-screen relative overflow-hidden">
+            <div className="relative w-full h-[12rem] mt-16  md:mt-0 md:h-[24rem] lg:h-screen overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1624640647972-6d584cb51230?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/Carousel/Hero/hero-1.webp"
                 alt="banner-image"
-                fill
-                className="object-cover object-center"
+                layout="fill" // Gunakan layout fill
+                className="object-cover object-center" // Gambar akan menutupi area yang tersedia
               />
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hidden md:flex" />
+      <CarouselNext className="hidden md:flex" />
     </Carousel>
   );
 }
