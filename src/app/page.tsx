@@ -1,5 +1,4 @@
 import MaxWidthWrapper from "@/components/Layouts/MaxWidthWrapper";
-import BannerVideo from "@/components/Layouts/pages/home/BannerVideo";
 import { HeroCarousel } from "@/components/Layouts/pages/home/HeroCarousel";
 import { MerkCarousel } from "@/components/Layouts/pages/home/MerkCarousel";
 import Image from "next/image";
@@ -10,8 +9,9 @@ export default function Home() {
       <div>
         <HeroCarousel />
       </div>
+
       <MaxWidthWrapper>
-        <MerkCarousel className="mt-8" />
+        <MerkCarousel />
       </MaxWidthWrapper>
       <div className="mb-20"></div>
     </div>

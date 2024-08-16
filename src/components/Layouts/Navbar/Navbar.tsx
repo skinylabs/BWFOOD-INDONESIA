@@ -39,7 +39,7 @@ const Navbar = () => {
       } `}
     >
       <div className="w-full font-medium  px-4 z-[100]">
-        <div className="flex h-16 items-center justify-between 2xl:h-24">
+        <div className="flex h-16 items-center justify-between 2xl:h-20">
           <div>
             <Icons.logo
               className={`flex w-10 h-10 ease-in-out duration-300 transition-all ${

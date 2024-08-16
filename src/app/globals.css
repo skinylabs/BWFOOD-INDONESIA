@@ -123,3 +123,66 @@
 .rotate-out {
   animation: rotateOut 0.5s backwards;
 }
+
+/* button
+================================================================= */
+
+/* From Uiverse.io by BaekCCI */
+.style-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.style-1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background: #fde047;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.style-1 span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #1d4ed8;
+}
+
+.style-1 svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #1d4ed8;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.style-1:hover:before {
+  width: 100%;
+  background: #fde047;
+}
+
+.style-1:hover svg {
+  transform: translateX(0);
+}
+
+.style-1:active {
+  transform: scale(0.95);
+}

@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
@@ -55,3 +54,21 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = "Button";
 
 export { Button, buttonVariants };
+
+// Komponen custom ButtonSeeMore
+
+export interface ButtonSeeMoreProps {
+  title: string;
+}
+
+export const ButtonSeeMore: React.FC<ButtonSeeMoreProps> = ({ title }) => {
+  return (
+    <button className="style-1">
+      <span>{title}</span>
+      <svg width="15px" height="10px" viewBox="0 0 13 10">
+        <path d="M1,5 L11,5"></path>
+        <polyline points="8 1 12 5 8 9"></polyline>
+      </svg>
+    </button>
+  );
+};
