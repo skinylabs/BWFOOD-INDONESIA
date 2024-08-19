@@ -8,7 +8,7 @@ export const links = [
   },
   {
     name: "About Me",
-    link: "#about",
+    link: "/about-us",
   },
   {
     name: "Portfolio",

@@ -31,7 +31,7 @@ export function HeroCarousel() {
           <CarouselItem key={index}>
             <div className="relative w-full h-[12rem] mt-16  md:mt-0 md:h-[24rem] lg:h-screen overflow-hidden">
               <Image
-                src="/Carousel/Hero/hero-1.webp"
+                src="/images/carousel/hero/hero-1.webp"
                 alt="banner-image"
                 layout="fill" // Gunakan layout fill
                 className="object-cover object-center" // Gambar akan menutupi area yang tersedia
