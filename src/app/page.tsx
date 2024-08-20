@@ -1,4 +1,4 @@
-import MaxWidthWrapper from "@/components/Layouts/MaxWidthWrapper";
+import MaxWidthWrapper from "@/components/Layouts/wrapper/MaxWidthWrapper";
 import { HeroCarousel } from "@/components/Layouts/pages/home/HeroCarousel";
 import { MerkCarousel } from "@/components/Layouts/pages/home/MerkCarousel";
 import Image from "next/image";

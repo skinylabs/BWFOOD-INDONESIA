@@ -124,6 +124,23 @@
   animation: rotateOut 0.5s backwards;
 }
 
+/* Bounce-Smooth
+============================================== */
+
+@keyframes bounce-smooth {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-smooth {
+  animation: bounce-smooth 3s ease-in-out infinite;
+}
+
 /* button
 ================================================================= */
 
