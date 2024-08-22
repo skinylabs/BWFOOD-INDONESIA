@@ -1,5 +1,6 @@
 import MaxWidthWrapper from "@/components/Layouts/wrapper/MaxWidthWrapper";
 import PageWidthWrapper from "@/components/Layouts/wrapper/PageWidthWrapper";
+import VisionMission from "@/components/pages/AboutUs/visionmission";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import Link from "next/link";
 const AboutUsPage = () => {
   return (
     <div>
-      <div className="w-full h-80 absolute overflow-hidden  mt-16 2xl:mt-20 ">
+      <div className="w-full h-96 absolute overflow-hidden  mt-16 2xl:mt-16 ">
         <Image
           src="/images/header/blue-pattern.svg"
           fill
@@ -22,7 +23,7 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      <MaxWidthWrapper className="flex flex-col gap-20 mt-[26rem]">
+      <MaxWidthWrapper className="flex flex-col gap-20 mt-[26rem] py-12">
         <div className="flex flex-col gap-6 text-center pt-12">
           <h1 className="text-4xl font-bold">BW FOOD INDONESIA</h1>
           <p>
@@ -38,45 +39,9 @@ const AboutUsPage = () => {
             Chip-Chip dan Super Ecoo.
           </p>
         </div>
-        <div className="w-full">
-          <div className="relative h-96 bg-blue-500 rounded-2xl m-8 overflow-hidden ">
-            <div className="absolute w-full h-full flex justify-end p-8">
-              <Image
-                src="/images/panda-rocket.svg"
-                alt="banner-image"
-                width={500}
-                height={500}
-                className="rounded-2xl animate-bounce-smooth"
-              />
-            </div>
-            <div className="w-3/4 h-96 bg-yellow-500 rounded-br-[20rem] flex flex-col gap-4 bg-[url('/images/pattern-batik-1.svg')] bg-cover bg-center">
-              <div className="p-8">
-                <div className="w-3/4">
-                  <h1 className="relative text-3xl font-bold text-white">
-                    VISI
-                  </h1>
-                  <p className="text-white text-lg">
-                    Menjadi pemimpin dalam industri makanan ringan dengan
-                    pertumbuhan berkelanjutan melalui inovasi yang
-                    terus-menerus, serta menciptakan pengalaman rasa yang
-                    memukau bagi setiap pelanggan.
-                  </p>
-                </div>
-                <div className="w-3/4">
-                  <h1 className="relative text-3xl font-bold text-white">
-                    MISI
-                  </h1>
-                  <p className="text-white text-lg">
-                    Kami berinovasi dalam menciptakan camilan yang mengikuti
-                    tren, memastikan kualitas tinggi, dan menciptakan nilai
-                    tambah bagi masyarakat melalui pertumbuhan bersama yang
-                    berkelanjutan.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <VisionMission />
+
         <div className="">
           <h1 className="text-4xl font-bold text-center">TEMPAT PRODUKSI</h1>
           <div className="grid grid-cols-2 gap-4 mt-24">

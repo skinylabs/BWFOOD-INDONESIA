@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const AboutUs = () => {
+const AboutUsHomePage = () => {
   return (
     <div className="w-full h-full flex justify-center items-center">
       <h1 className="text-3xl lg:text-5xl text-center font-bold text-slate-700">
@@ -11,4 +11,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsHomePage;

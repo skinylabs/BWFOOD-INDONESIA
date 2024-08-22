@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Layouts/Navbar/Navbar";
-import BannerVideo from "@/components/Layouts/pages/home/BannerVideo";
+
+import Footer from "@/components/Layouts/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           <Navbar />
           <div className="flex grow flex-1">{children}</div>
         </main>
+        <Footer />
       </body>
     </html>
   );

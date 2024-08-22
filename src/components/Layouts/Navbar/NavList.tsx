@@ -7,7 +7,7 @@ export const links = [
     link: "/",
   },
   {
-    name: "About Me",
+    name: "About Us",
     link: "/about-us",
   },
   {

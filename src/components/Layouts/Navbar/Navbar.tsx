@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import NavList from "./NavList";
@@ -14,6 +15,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const sidebarRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+  const pathname = usePathname();
 
   useClickOutside(sidebarRef, () => setOpen(false));
 
@@ -32,20 +35,22 @@ const Navbar = () => {
     };
   }, []);
 
+  const isHomePage = pathname === "/";
+
   return (
     <nav
-      className={`fixed w-full duration-300 z-[100]  ${
-        scrolled ? "bg-white" : ""
-      } `}
+      className={`fixed w-full duration-300 z-[100] ${
+        isHomePage ? (scrolled ? "bg-white" : "bg-transparent") : "bg-white"
+      }`}
     >
       <div className="w-full font-medium  px-4 z-[100]">
         <div className="flex h-16 items-center justify-between 2xl:h-20">
           <div>
             <Icons.logo
               className={`flex w-10 h-10 ease-in-out duration-300 transition-all ${
-                scrolled
+                scrolled || !isHomePage
                   ? "fill-blue-500 md:fill-blue-500"
-                  : " fill-blue-500 md:fill-white"
+                  : "fill-blue-500 md:fill-white"
               } `}
             />
           </div>
@@ -56,8 +61,7 @@ const Navbar = () => {
             <div
               className={`
                 ${open ? "hidden" : ""}
-                ${scrolled ? "block" : "hidden"}
-                ${!open && scrolled ? "block" : ""}
+                ${scrolled || !isHomePage ? "block" : "hidden"}
                 md:block lg:block 
               `}
             >
