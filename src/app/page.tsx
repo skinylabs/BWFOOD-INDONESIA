@@ -1,8 +1,11 @@
 import { Patterns } from "@/components/Icons/pattern";
 import MaxWidthWrapper from "@/components/Layouts/wrapper/MaxWidthWrapper";
+import CtaSection from "@/components/pages/home/CtaSection";
 import { HeroCarousel } from "@/components/pages/home/HeroCarousel";
 import { MerkCarousel } from "@/components/pages/home/MerkCarousel";
 import ProductSection from "@/components/pages/home/ProdukSection";
+import ServiceSection from "@/components/pages/home/ServiceSection";
+import UpdateSosmed from "@/components/pages/home/UpdateSosmed";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,10 +29,11 @@ export default function Home() {
             <div></div>
             <div className="p-8 relative z-10 col-span-2 flex flex-col gap-4 justify-center">
               <p className="text-white">
-                BWFOOD INDONESIA, berdiri sejak 1992 di Jawa Tengah, memproduksi
-                beragam makanan ringan berkualitas yang telah menjadi bagian
-                dari kehidupan masyarakat Indonesia. Beberapa merek populer kami
-                termasuk Kungfu Panda, Mister Panda, dan Chiko.
+                Makanan ringan bukan hanya sekadar camilan, ia adalah cermin
+                jiwa yang mencerminkan dedikasi dan cinta kami. Setiap gigitan
+                adalah hasil dari komitmen kami untuk kualitas dan kelezatan,
+                menyajikan pengalaman yang memuaskan dengan sentuhan yang penuh
+                kasih.
               </p>
               <Link
                 href={"/about-us"}
@@ -38,7 +42,7 @@ export default function Home() {
                   variant: "default",
                 })} w-1/3`}
               >
-                See More
+                See More About Us
               </Link>
             </div>
           </div>
@@ -46,6 +50,9 @@ export default function Home() {
 
         {/* Produk Page  */}
         <ProductSection />
+        <ServiceSection />
+        <CtaSection />
+        <UpdateSosmed />
       </MaxWidthWrapper>
       <div className="mb-20"></div>
     </div>

@@ -36,7 +36,7 @@ const Footer = () => {
                       href="https://tailwindcss.com/"
                       className="hover:underline"
                     >
-                      Merk
+                      Site Map
                     </Link>
                   </div>
                   <div>
@@ -44,23 +44,7 @@ const Footer = () => {
                       href="https://tailwindcss.com/"
                       className="hover:underline"
                     >
-                      Produk
-                    </Link>
-                  </div>
-                  <div>
-                    <Link
-                      href="https://tailwindcss.com/"
-                      className="hover:underline"
-                    >
-                      Makloon
-                    </Link>
-                  </div>
-                  <div>
-                    <Link
-                      href="https://tailwindcss.com/"
-                      className="hover:underline"
-                    >
-                      Contact Us
+                      Career
                     </Link>
                   </div>
                 </div>
