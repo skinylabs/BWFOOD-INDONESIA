@@ -22,7 +22,7 @@ const CtaSection = () => {
             href="/"
             className={`${buttonVariants({
               variant: "default",
-            })} text-black font-semibold bg-white hover:bg-slate-200 hover:scale-105 duration-300 transition-all ease-in-out w-1/3`}
+            })} text-slate-900 font-bold bg-white hover:bg-slate-200 hover:scale-105 duration-300 transition-all ease-in-out w-1/3`}
           >
             Hubungi Kami
           </Link>
