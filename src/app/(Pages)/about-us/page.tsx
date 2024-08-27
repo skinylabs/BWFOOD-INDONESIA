@@ -1,6 +1,6 @@
-import MaxWidthWrapper from "@/components/Layouts/wrapper/MaxWidthWrapper";
-import PageWidthWrapper from "@/components/Layouts/wrapper/PageWidthWrapper";
-import VisionMission from "@/components/pages/AboutUs/visionmission";
+import MaxWidthWrapper from "@/components/Frontend/Layouts/MaxWidthWrapper";
+import PageBanner from "@/components/Frontend/Layouts/PageBanner";
+import VisionMission from "@/components/Frontend/Pages/AboutUs/visionmission";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,20 +8,11 @@ import Link from "next/link";
 const AboutUsPage = () => {
   return (
     <div>
-      <div className="w-full h-96 absolute overflow-hidden  mt-16 2xl:mt-16 ">
-        <Image
-          src="/images/header/blue-pattern.svg"
-          fill
-          alt="banner-image"
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative w-full h-full flex justify-center items-center ">
-          <h1 className="text-3xl lg:text-5xl text-center font-bold text-white">
-            Tentang Kami
-          </h1>
-        </div>
-      </div>
+      <PageBanner
+        imageSrc="/images/header/blue-pattern.svg"
+        heading="Tentang Kami"
+        height="h-96"
+      />
 
       <MaxWidthWrapper className="flex flex-col gap-20 mt-[26rem] py-12">
         <div className="flex flex-col gap-6 text-center pt-12">

@@ -13,11 +13,11 @@ export const Icons = {
       width="5.63976in"
       height="5.63976in"
       version="1.1"
-      shape-rendering="geometricPrecision"
-      text-rendering="geometricPrecision"
-      image-rendering="optimizeQuality"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      shapeRendering="geometricPrecision"
+      textRendering="geometricPrecision"
+      imageRendering="optimizeQuality"
+      fillRule="evenodd"
+      clipRule="evenodd"
       viewBox="0 0 1951.55 1951.55"
     >
       <g id="Layer_x0020_1">
@@ -43,11 +43,11 @@ export const Icons = {
       width="32.0689mm"
       height="30.7149mm"
       version="1.1"
-      shape-rendering="geometricPrecision"
-      text-rendering="geometricPrecision"
-      image-rendering="optimizeQuality"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      shapeRendering="geometricPrecision"
+      textRendering="geometricPrecision"
+      imageRendering="optimizeQuality"
+      fillRule="evenodd"
+      clipRule="evenodd"
       viewBox="0 0 360.37 345.16"
     >
       <g id="Layer_x0020_1">
@@ -68,10 +68,10 @@ export const Icons = {
       height="30.2328mm"
       version="1.1"
       shape-rendering="geometricPrecision"
-      text-rendering="geometricPrecision"
-      image-rendering="optimizeQuality"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      textRendering="geometricPrecision"
+      imageRendering="optimizeQuality"
+      fillRule="evenodd"
+      clipRule="evenodd"
       viewBox="0 0 259.4 259.4"
     >
       <g id="Layer_x0020_1">
@@ -82,7 +82,7 @@ export const Icons = {
         />
         <path
           fill={fill2}
-          fill-rule="nonzero"
+          fillRule="nonzero"
           d="M129.7 0c35.81,0 68.24,14.52 91.71,37.99 23.47,23.47 37.99,55.9 37.99,91.71 0,35.81 -14.52,68.24 -37.99,91.71 -23.47,23.47 -55.9,37.99 -91.71,37.99 -35.81,0 -68.24,-14.52 -91.71,-37.99 -23.47,-23.47 -37.99,-55.9 -37.99,-91.71 0,-35.81 14.52,-68.24 37.99,-91.71 23.47,-23.47 55.9,-37.99 91.71,-37.99zm-69.09 45.77l153.02 153.02c15.48,-18.78 24.77,-42.85 24.77,-69.09 0,-30.02 -12.17,-57.2 -31.84,-76.87 -19.67,-19.67 -46.85,-31.84 -76.87,-31.84 -26.24,0 -50.31,9.3 -69.09,24.77zm138.18 167.86l-153.02 -153.02c-15.48,18.78 -24.77,42.85 -24.77,69.09 0,30.02 12.17,57.2 31.84,76.87 19.67,19.67 46.85,31.84 76.87,31.84 26.24,0 50.31,-9.3 69.09,-24.77z"
         />
       </g>

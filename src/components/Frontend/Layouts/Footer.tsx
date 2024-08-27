@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Icons } from "../Icons/icons";
-import MaxWidthWrapper from "./wrapper/MaxWidthWrapper";
+
+import MaxWidthWrapper from "./MaxWidthWrapper";
+import { Icons } from "@/components/Icons/icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t-2 border-gray-100">
+    <footer className="bg-white border-t-2 border-gray-100 ">
       <MaxWidthWrapper>
         <div className="p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">

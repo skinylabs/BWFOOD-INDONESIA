@@ -3,8 +3,9 @@
 import { useState } from "react";
 import { ButtonSeeMore, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
-import InstagramFeed from "./InstagramFeed";
+
 import { RefreshCcw } from "lucide-react";
+import InstagramFeed from "./InstagramFeed";
 
 const UpdateSosmed = () => {
   const [refreshKey, setRefreshKey] = useState(0);

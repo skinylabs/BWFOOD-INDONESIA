@@ -7,12 +7,12 @@ export const links = [
     link: "/",
   },
   {
-    name: "About Us",
+    name: "Tentang Kami",
     link: "/about-us",
   },
   {
-    name: "Portfolio",
-    link: "#portfolio",
+    name: "Produk",
+    link: "/product",
   },
   {
     name: "Skills",

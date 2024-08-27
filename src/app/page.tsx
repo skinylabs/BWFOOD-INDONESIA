@@ -1,23 +1,23 @@
 import { Patterns } from "@/components/Icons/pattern";
-import MaxWidthWrapper from "@/components/Layouts/wrapper/MaxWidthWrapper";
-import CtaSection from "@/components/pages/home/CtaSection";
-import { HeroCarousel } from "@/components/pages/home/HeroCarousel";
-import { MerkCarousel } from "@/components/pages/home/MerkCarousel";
-import ProductSection from "@/components/pages/home/ProdukSection";
-import ServiceSection from "@/components/pages/home/ServiceSection";
-import UpdateSosmed from "@/components/pages/home/UpdateSosmed";
+
+import CtaSection from "@/components/Frontend/Pages/home/CtaSection";
+import { FAQ } from "@/components/Frontend/Pages/home/FAQ";
+import { HeroCarousel } from "@/components/Frontend/Pages/home/HeroCarousel";
+import { MerkCarousel } from "@/components/Frontend/Pages/home/MerkCarousel";
+import ProductSection from "@/components/Frontend/Pages/home/ProdukSection";
+import ServiceSection from "@/components/Frontend/Pages/home/ServiceSection";
+import UpdateSosmed from "@/components/Frontend/Pages/home/UpdateSosmed";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import MaxWidthWrapper from "@/components/Frontend/Layouts/MaxWidthWrapper";
 
 export default function Home() {
   return (
-    <div className="w-full ">
-      <div>
-        <HeroCarousel />
-      </div>
+    <section>
+      <HeroCarousel />
 
-      <MaxWidthWrapper className="flex flex-col gap-4">
+      <MaxWidthWrapper className="flex flex-col gap-8">
         <MerkCarousel />
         <div className="w-full h-80 relative rounded-3xl bg-blue-500">
           <Patterns.batikSatu
@@ -53,8 +53,52 @@ export default function Home() {
         <ServiceSection />
         <CtaSection />
         <UpdateSosmed />
+        <FAQ />
       </MaxWidthWrapper>
-      <div className="mb-20"></div>
-    </div>
+      <section className="w-full bg-blue-500 mt-16">
+        <div className="grid grid-cols-2 relative">
+          {/* First Image Container */}
+          <Link
+            href="/makloon"
+            className="relative w-full h-80 overflow-hidden"
+          >
+            <Image
+              src="/images/jabatTangan.jpg"
+              alt="banner-image"
+              layout="fill"
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+            {/* Overlay hitam */}
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-white p-20 text-center">
+              <h1 className="text-3xl font-bold">Makloon Information</h1>
+              <p className="mt-2 text-lg">
+                Join our team and be a part of something great. Explore exciting
+                career paths with us!
+              </p>
+            </div>
+          </Link>
+
+          {/* Second Image Container */}
+          <Link href="career" className="relative w-full h-80 overflow-hidden">
+            <Image
+              src="/images/karir.jpg"
+              alt="banner-image"
+              layout="fill"
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+            {/* Overlay hitam */}
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-white p-20 text-center">
+              <h1 className="text-3xl font-bold">Career Opportunities</h1>
+              <p className="mt-2 text-lg">
+                Join our team and be a part of something great. Explore exciting
+                career paths with us!
+              </p>
+            </div>
+          </Link>
+        </div>
+      </section>
+    </section>
   );
 }

@@ -28,10 +28,14 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({ onRefresh }) => {
     try {
       const response = await fetch(`/api/instagram?limit=${limit}`);
       const data = await response.json();
-      setPosts(data.data);
+      if (data.data && data.data.length > 0) {
+        setPosts(data.data);
+      } else {
+        setPosts([]);
+      }
     } catch (error) {
       console.error("Error fetching Instagram posts:", error);
-      setError("Failed to fetch posts");
+      setError("Failed to fetch posts. Please try again later.");
     } finally {
       setLoading(false);
     }
@@ -60,6 +64,10 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({ onRefresh }) => {
           Refresh Feed
         </button>
       </div>
+
+      {posts.length === 0 && !loading && !error && (
+        <p className="mt-4 text-gray-500">No photos available.</p>
+      )}
 
       <div className="grid grid-cols-6 gap-4 mt-4">
         {posts.map((post) => {
